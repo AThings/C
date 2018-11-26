@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    //test test
     int arr[200];
     int n;//数组长度
     int temp,big;
