@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1545573175 source:f:\thenewdesktop\studyandwork\code\c&c++\hextodec\main.cpp
+	<iostream>
+	<string>
+	<math.h>
+
