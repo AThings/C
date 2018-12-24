@@ -69,27 +69,8 @@ int main()
     for(int i=0; i<length; i++)
     {
         long long iTonum = (long long)(((int)bin[length-i-1]%48)*pow(2,i));
-        //cout<<" itonum="<<iTonum<<endl;
         dec+=iTonum;
     }
     cout<<dec<<endl;
-    /*
-    bool flag = false;
-    for(int i=0; i<dec.length(); i++)
-    {
-        //cout<<"otci="<<(otc[i]!=0)<<"\n";
-        if(dec[i]!='0' && !flag)
-        {
-            //cout<<"ok+"<<i<<"\n";
-            flag=true;
-        }
-        if(flag)
-        {
-            cout<<dec[i];
-        }
-    }
-    cout<<"\n";
-    */
-
     return 0;
 }
