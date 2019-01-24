@@ -38,8 +38,38 @@ void insertSort(int arr[],int n)
     }
     arr[index] = x;
 }
+
+int quQiu(int n , int m)
+{
+    if(n<m) return 0;
+    if(n==m) return 1;
+    if(m==0) return 1;
+    return quQiu(n-1,m-1)+quQiu(n-1,m);
+}
+int quanpailie(int arr[],int k,int n)
+{
+    if(k==n)
+    {
+        for(int i=0;i<n;i++)
+        {
+            cout<<arr[i]<<" ";
+        }
+        cout<<endl;
+    }
+    for(int i=k;i<n;i++)
+    {
+        {
+           int t = arr[k];arr[k] = arr[i];arr[i] = t;
+        }
+        quanpailie(arr,k+1,n);
+        {
+           int t = arr[k];arr[k] = arr[i];arr[i] = t;
+        }
+    }
+}
 int main()
 {
+    /*
     iPrintJ(2,5);
     int arr[7] = {6,4,7,2,1,6,7};
     cout<<"___________________________\n";
@@ -50,5 +80,9 @@ int main()
     }
     cout<<"___________________________\n";
     cout<<re("labcde",4)<<endl;
+    */
+    //cout<<quQiu(10,3);
+    int arr[5] = {1,2,3,4,5};
+    quanpailie(arr,0,5);
     return 0;
 }
