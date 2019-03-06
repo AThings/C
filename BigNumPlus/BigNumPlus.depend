@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1548748871 source:f:\thenewdesktop\studyandwork\code\c&c++\bignumplus\main.cpp
+	<iostream>
+	<sstream>
+

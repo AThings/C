@@ -1,48 +1,46 @@
 #include <iostream>
 #include <sstream>
 using namespace std;
-
+/*
+int PT(int m,int n)//求杨辉三角第m层第n个
+{
+    if(n==1)
+    {
+        return 1;
+    }
+    if(m==n)
+    {
+        return 1;
+    }
+    return PT(m-1,n)+PT(m-1,n-1);
+}*/
 int main()
 {
-    int n;
-    cin>>n;
-    string first="1";
-    string second="1 1";
-    stringstream temp;
-    for(int i=0;i<n;i++)
+    int level;
+    cin>>level;
+    int pt[34][34];
+    for(int i=0 ; i<level ; i++)//遍历1~level层
     {
-        if(i==0)
+        for(int j=0;j<=i;j++)//遍历每一行
         {
-            cout<<first<<endl;
-        }
-        else if(i==1)
-        {
-            cout<<second<<endl;
-        }
-        else
-        {
-            first=second;
-            for(int j=0;j<2*i+1;j++)
+            if(j==0 || j==i)
             {
-                if(j%2==1)
-                {
-                    temp<<" ";
-                }
-                else if(j==0 || j==2*i)
-                {
-                    temp<<"1";
-                }
-                else
-                {
-                    //cout<<2*n<<endl;
-                    //cout<<"first[j]="<<first[j]<<" first[j-2]"<<first[j-2]<<endl;
-                    temp<<(int)first[j]%48+(int)first[j-2]%48;
-                }
+                pt[i][j] = 1;
             }
-            second=temp.str();
-            temp.str("");
-            cout<<second<<endl;
+            else
+            {
+                pt[i][j] = pt[i-1][j] + pt[i-1][j-1];
+            }
         }
+    }
+
+    for(int i=0;i<level;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<pt[i][j]<<" ";
+        }
+        cout<<endl;
     }
     return 0;
 }

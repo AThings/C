@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1548499750 source:f:\thenewdesktop\studyandwork\code\c&c++\mapsort\main.cpp
+	<iostream>
+	<map>
+
