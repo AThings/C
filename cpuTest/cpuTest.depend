@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552055069 source:f:\thenewdesktop\studyandwork\code\c&c++\cputest\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
