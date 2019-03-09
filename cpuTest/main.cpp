@@ -24,7 +24,6 @@ int main()
 
     for(int i=0; i<n; i++)
     {
-        cout<<i<<"="<<flag[i]<<" ";
         if(flag[i]>=n/2)
         {
             cout<<i+1<<" ";
