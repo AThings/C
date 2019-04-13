@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1552922190 source:f:\thenewdesktop\studyandwork\code\c&c++\crossingthedesert\main.cpp
+	<iostream>
+	<string.h>
+	<math.h>
+	<iomanip>
+

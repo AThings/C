@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1553264249 source:f:\thenewdesktop\studyandwork\code\c&c++\calcul\main.cpp
+	<iostream>
+	<sstream>
+

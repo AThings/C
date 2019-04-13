@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552812794 source:f:\thenewdesktop\studyandwork\code\c&c++\acm\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+

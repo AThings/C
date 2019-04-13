@@ -41,7 +41,6 @@ int main()
 {
     int n;
     cin>>n;
-    cout<<An(1,n,0)<<endl;;
     cout<<Sn(n,n);
     return 0;
 }

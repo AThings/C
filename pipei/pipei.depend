@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1553350652 source:f:\thenewdesktop\studyandwork\code\c&c++\pipei\main.cpp
+	<iostream>
+	<algorithm>
+	<string.h>
+
